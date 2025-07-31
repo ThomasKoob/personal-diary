@@ -1,4 +1,3 @@
-// 📁 components/DiaryList.jsx
 // Zeigt alle Einträge in Form von Karten
 
 import DiaryCard from "./DiaryCard";

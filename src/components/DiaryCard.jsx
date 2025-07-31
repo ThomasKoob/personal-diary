@@ -1,5 +1,4 @@
-// 📁 components/DiaryCard.jsx
-// Eine einzelne Eintrags-Karte
+// Einzelne Eintrags-Karte mit Vorschau
 
 const DiaryCard = ({ entry, onClick }) => {
   return (
