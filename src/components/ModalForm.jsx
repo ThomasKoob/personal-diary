@@ -1,6 +1,4 @@
-// 📁 components/ModalForm.jsx
 // Modal mit Formular zum Hinzufügen eines neuen Eintrags
-
 import { useState, forwardRef } from "react";
 
 const ModalForm = forwardRef(({ onSave, onClose }, ref) => {

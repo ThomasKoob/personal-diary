@@ -1,4 +1,3 @@
-// 📁 App.jsx
 // Hauptkomponente – verwaltet State, localStorage, und die Modale
 
 import { useState, useRef, useEffect } from "react";
@@ -12,7 +11,7 @@ const App = () => {
   const modalRef = useRef(); // Modal zum Hinzufügen
   const detailModalRef = useRef(); // Modal zur Anzeige
 
-  // 🚀 Lade beim ersten Start vorhandene Einträge aus localStorage
+  // Lade beim ersten Start vorhandene Einträge aus localStorage
   useEffect(() => {
     try {
       const stored = JSON.parse(localStorage.getItem("diaryEntries"));
@@ -23,7 +22,7 @@ const App = () => {
     }
   }, []);
 
-  // 💾 Speichere automatisch bei Änderungen
+  // Speichere automatisch bei Änderungen
   useEffect(() => {
     localStorage.setItem("diaryEntries", JSON.stringify(entries));
   }, [entries]);
@@ -55,7 +54,7 @@ const App = () => {
     setEntries([...entries, newEntry]);
   };
 
-  // 📅 Sortiert nach Datum (neuester zuerst)
+  // Sortiert nach Datum (neuester zuerst)
   const sortedEntries = [...entries].sort((a, b) =>
     b.date.localeCompare(a.date)
   );
